@@ -7,23 +7,11 @@ Peek fades floating Hyprland windows to ten percent opacity so you can see and i
 
 ## Install
 
-Install Peek disabled so you can review it before it runs:
-
 ```bash
-omarchy plugin add https://github.com/brianblakely/peek.git --no-enable
+omarchy plugin add https://github.com/brianblakely/peek.git
 ```
 
-Review the installed checkout:
-
-```bash
-omarchy plugin edit b.peek
-```
-
-Then enable it:
-
-```bash
-omarchy plugin enable b.peek
-```
+Accept the prompt to enable Peek during installation.
 
 ## Optional shortcuts
 
@@ -39,7 +27,7 @@ o.bind("SUPER + CTRL + GRAVE", "Disable floating window peek", "omarchy-shell b.
 
 Peek runs `hyprctl eval` to install and toggle a named runtime Hyprland Lua window rule. The rule changes floating-window opacity, blur, focus, and follow-mouse behavior. Peek reapplies the rule after a Hyprland config reload and disables it when unloaded. It does not write files or use the network.
 
-Plugins run unsandboxed inside `omarchy-shell`; review the checkout before enabling it.
+Plugins run unsandboxed inside `omarchy-shell`; review the source before installing it.
 
 ## Update
 
