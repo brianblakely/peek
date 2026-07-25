@@ -23,18 +23,8 @@ o.bind("SUPER + ALT + GRAVE", "Enable floating window peek", "omarchy-shell b.pe
 o.bind("SUPER + CTRL + GRAVE", "Disable floating window peek", "omarchy-shell b.peek disable")
 ```
 
-## Behavior
-
-Peek runs `hyprctl eval` to install and toggle a named runtime Hyprland Lua window rule. The rule changes floating-window opacity, blur, focus, and follow-mouse behavior. Peek reapplies the rule after a Hyprland config reload and disables it when unloaded. It does not write files or use the network.
-
-Plugins run unsandboxed inside `omarchy-shell`; review the source before installing it.
-
 ## Update
 
 ```bash
 omarchy plugin update b.peek
 ```
-
-## License
-
-[MIT](LICENSE)
