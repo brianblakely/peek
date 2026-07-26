@@ -1,6 +1,6 @@
 # Peek
 
-Peek fades floating Hyprland windows to ten percent opacity so you can see and interact with the content underneath.
+Fades floating Hyprland windows to minimal opacity so you can see and interact with the content underneath.
 
 ![Peek disabled](images/peek1.png)
 ![Peek enabled](images/peek2.png)
@@ -11,11 +11,7 @@ Peek fades floating Hyprland windows to ten percent opacity so you can see and i
 omarchy plugin add https://github.com/brianblakely/peek.git
 ```
 
-Accept the prompt to enable Peek during installation.
-
-## Optional shortcuts
-
-Global keybindings remain user-owned. Add any of these to your Hyprland bindings:
+## Shortcuts
 
 ```lua
 o.bind("SUPER + GRAVE", "Toggle floating window peek", "omarchy-shell b.peek toggle")

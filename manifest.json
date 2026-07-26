@@ -4,7 +4,7 @@
   "name": "Peek",
   "version": "0.0.4",
   "author": "Brian Blakely",
-  "description": "Hyprland floating-window peek service",
+  "description": "Fades floating Hyprland windows to minimal opacity so you can see and interact with the content underneath",
   "kinds": [
     "service"
   ],
