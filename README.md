@@ -1,14 +1,16 @@
 # Peek
 
-Fades floating Hyprland windows to minimal opacity so you can see and interact with the content underneath.
+Fades floating Hyprland windows to minimal opacity and disables them so you can
+see and interact with the content underneath.
 
-![Peek disabled](images/peek1.png)
-![Peek enabled](images/peek2.png)
+![Peek disabled](preview2.png)
+
+![Peek enabled](preview.png)
 
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/brianblakely/peek.git
+omarchy plugin add https://github.com/brianblakely/peek.git --enable --yes
 ```
 
 ## Shortcuts
@@ -23,4 +25,10 @@ o.bind("SUPER + CTRL + GRAVE", "Disable floating window peek", "omarchy-shell b.
 
 ```bash
 omarchy plugin update b.peek
+```
+
+## Uninstall
+
+```bash
+omarchy plugin remove b.peek
 ```
