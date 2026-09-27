@@ -118,6 +118,10 @@ Item {
 
   function handleHyprlandEvent(event) {
     var name = String(event && event.name ? event.name : "")
+    // The rule also matches windows created while peeking. Restore interaction
+    // when an app opens a new window, especially an Open/Save dialog.
+    if (name === "openwindow" && desiredEnabled)
+      disable()
     if (name === "configreloaded" && desiredEnabled)
       Qt.callLater(applyDesired)
   }

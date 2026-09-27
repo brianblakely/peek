@@ -3,6 +3,9 @@
 Fades floating Hyprland windows to minimal opacity and disables them so you can
 see and interact with the content underneath.
 
+Opening a new window exits Peek automatically, so file pickers and other new
+dialogs remain visible and usable. Toggle Peek again when you want to resume.
+
 ![Peek disabled](preview2.png)
 
 ![Peek enabled](preview.png)
